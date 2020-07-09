@@ -1,0 +1,286 @@
+pre[class*="language-"],
+code[class*="language-"] {
+  color: #d4d4d4;
+  color:#000;
+  font-size: 14px;
+  text-shadow: none;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::selection,
+code[class*="language-"]::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+@media print {
+  pre[class*="language-"],
+  code[class*="language-"] {
+    text-shadow: none;
+  }
+}
+
+pre[class*="language-"] {
+  padding: 1.5em;
+  border: none;
+  border-radius: 8px;
+  margin: 2em 0;
+  overflow: auto;
+  background: #1e1e1e;
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  color: #db4c69;
+  color:#000;
+  background: #f9f2f4;
+}
+/*********************************************************
+* Tokens
+*/
+.namespace {
+  opacity: 0.7;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6a9955;
+  color:#000;
+}
+
+.token.punctuation {
+  color: #d4d4d4;
+  color:#000;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #b5cea8;
+  color:#000;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #ce9178;
+  color:#000;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #d4d4d4;
+  background: #1e1e1e;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #c586c0;
+  color:#000;
+}
+
+.token.function {
+  color: #dcdcaa;
+  color:#000;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #d16969;
+  color:#000;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+  color:#000;
+}
+
+.token.constant {
+  color: #9cdcfe;
+  color:#000;
+}
+
+.token.class-name {
+  color: #4ec9b0;
+  color:#000;
+}
+
+.token.parameter {
+  color: #9cdcfe;
+  color:#000;
+}
+
+.token.interpolation {
+  color: #9cdcfe;
+  color:#000;
+}
+
+.token.punctuation.interpolation-punctuation {
+  color: #569cd6;
+  color:#000;
+}
+
+.token.boolean {
+  color: #569cd6;
+  color:#000;
+}
+
+.token.property {
+  color: #9cdcfe;
+  color:#000;
+}
+
+.token.selector {
+  color: #d7ba7d;
+  color:#000;
+}
+
+.token.tag {
+  color: #569cd6;
+  color:#000;
+}
+
+.token.attr-name {
+  color: #9cdcfe;
+  color:#000;
+}
+
+.token.attr-value {
+  color: #ce9178;
+  color:#000;
+}
+
+.token.entity {
+  color: #4ec9b0;
+  color:#000;
+  cursor: unset;
+}
+
+.token.namespace {
+  color: #4ec9b0;
+  color:#000;
+}
+/*********************************************************
+* Language Specific
+*/
+pre[class*="language-javascript"],
+code[class*="language-javascript"] {
+  color: #4ec9b0;
+  color:#000;
+}
+
+pre[class*="language-css"],
+code[class*="language-css"] {
+  color: #ce9178;
+  color:#000;
+}
+
+pre[class*="language-html"],
+code[class*="language-html"] {
+  color: #d4d4d4;
+  color:#000;
+}
+
+.language-html .token.punctuation {
+  color: #808080;
+  color:#000;
+}
+/*********************************************************
+* Line highlighting
+*/
+pre[data-line] {
+  position: relative;
+}
+
+pre[class*="language-"] > code[class*="language-"] {
+  position: relative;
+  z-index: 1;
+}
+
+/* .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: #f7ebc6;
+  box-shadow: inset 5px 0 0 #f7d87c;
+  z-index: 0;
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+} */
+
+.gatsby-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+  margin-right: -1em;
+  margin-left: -4.3em;
+  padding-right: 1em;
+  padding-left: 4em;
+  border-left: 0.28em solid #ae8df9;
+  color: #00ffe5;
+  color:#000;
+  border-radius: 0.2em;
+}
+
+.gatsby-highlight {
+  background-color: #1d1d1d;
+  background-color: #fff;
+  border-radius: 0.3em;
+  margin: 2em 0;
+  padding: 1em 0.4em;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+  overflow: auto;
+  overflow-x: a;
+}
+
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
